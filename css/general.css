@@ -332,7 +332,7 @@ color: #ECEBEB;
 }
 @media (max-width: 768px) {
     .banner img {
-        width: 380px;
+        width: 360px;
     }
 }
 /* Animate */
