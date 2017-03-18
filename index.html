@@ -105,7 +105,7 @@
 			<div class="row">
 			
 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>Mengapa menggunakan Birthday Buzz?</h2>
+				<h2>Mengapa Birthday Buzz?</h2>
 				<p class="lead" style="margin-top:0">Birthday Buzz Bot.</p>
 			 </div>
 			 
@@ -229,7 +229,7 @@
                     <div class="team-member">
                         <img src="img/team/asu.png" class="img-responsive img-circle" alt="">
                         <h4>Muhammad Alif Akbar</h4>
-                        <p class="text-muted">Mobile Application</p>
+                        <p class="text-muted">Back End Developer</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.instagram.com/muh.alifgiant/"><i class="fa fa-instagram"></i></a>
                             </li>
@@ -244,7 +244,7 @@
                     <div class="team-member">
                         <img src="img/team/ald.jpg" class="img-responsive img-circle" alt="">
                         <h4>Lutfi Aldi Nugroho</h4>
-                        <p class="text-muted">Web Application</p>
+                        <p class="text-muted">Front End Developer</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.instagram.com/lutfialdinugroho/"><i class="fa fa-instagram"></i></a>
                             </li>
@@ -257,8 +257,8 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/una.PNG" class="img-responsive img-circle" alt="">
-                        <h4>'95 weirdo</h4>
+                        <img src="img/team/husn.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Khusnaini Aghniya</h4>
                         <p class="text-muted">Designer</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.instagram.com/husnaghniya/"><i class="fa fa-instagram"></i></a>
@@ -286,39 +286,39 @@
 				<p class="lead" style="margin-top:0">A special thanks to Palapa Co.</p>
 			</div>
 			
-			<form role="form" action="" method="post" >
+			<form name="sentMessage" id="contactForm" role="form" action="" method="post" novalidate>
 				<div class="col-md-6">
 					<div class="form-group">
-						<label for="InputName">Your Name</label>
+						<label for="name">Your Name</label>
 						<div class="input-group">
-							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+							<input type="text" class="form-control" name="name" id="name" required data-validation-required-message="Enter Name">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
 					
 					<div class="form-group">
-						<label for="InputEmail">Your Email</label>
+						<label for="email">Your Email</label>
 						<div class="input-group">
-							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+							<input type="email" class="form-control" id="email" name="email" required data-validation-required-message="Enter Your Email" >
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
                     <div class="form-group">
-						<label for="InputTopic">Topic</label>
+						<label for="topic">Topic</label>
 						<div class="input-group">
-							<input type="topic" class="form-control" id="InputTopic" name="InputTopic" placeholder="Enter Topic" required  >
+							<input type="topic" class="form-control" id="topic" name="topic" required data-validation-required-message="Enter Topic" >
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
 					
 					<div class="form-group">
-						<label for="InputMessage">Message</label>
+						<label for="message">Message</label>
 						<div class="input-group">
-							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							<textarea name="message" id="message" class="form-control" rows="5" required data-validation-required-message="Enter Your Message"></textarea>
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
-
+                    
 					<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
 				</div>
 			</form>
@@ -391,6 +391,9 @@
 	<script>
 	 new WOW().init();
 	</script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/uiMorphingButton_inflow.js"></script>
 	<!-- Magnific Popup core JS file -->
